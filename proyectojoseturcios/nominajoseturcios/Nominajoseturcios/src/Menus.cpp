@@ -174,3 +174,78 @@ string Menus::subMenuInf(string nombreUsuario)
     }
     }while(optEscoger!=3);
 }
+
+    string Menus::menuProcesos(string nombreUsuario)
+{
+    string userName = nombreUsuario;
+    system("cls");
+    int optEscoger;
+  bool repetir = true;
+    do
+    {
+    cout << "\t\t\t-------------------------------------------------\n";
+    cout << "\t\t\t|                  !Hola " << userName << "!                  |" <<endl;
+    cout << "\t\t\t-------------------------------------------------\n";
+    cout << "\n\t\t\t-----------------------------------\n";
+    cout << "\t\t\t| Bienvenido al Menu de Procesos |";
+    cout << "\n\t\t\t---------------------------------"<<endl;
+    cout << "\t\t\t1. Descuentos"<<endl;
+    cout << "\t\t\t2. Horas Extras"<<endl;
+    cout << "\t\t\t3. Total a Pagar"<<endl;
+    cout << "\t\t\t4. Porcentajes"<<endl;
+    cout << "\t\t\t5. Salario Diario"<<endl;
+    cout << "\t\t\t6. Salir del Sistema" << endl;
+    cout << "\n\n\t\t\t---------------------------------------";
+    cout << "\n\t\t\t| Opciones a escoger: [1] - [2] - [3] - [4]- [5]- [6]";
+    cout << "\n\t\t\t---------------------------------------";
+
+    cout << "\n\n\t\t\tIngrese la opcion que desea escoger: ";
+    cin >> optEscoger;
+
+    switch(optEscoger)
+    {
+
+    case 1:{
+       system("cls");
+       Descuentos menu;
+       menu.menuDescuentos();
+                break;
+    }
+
+    case 2:{
+        system("cls");
+        Descuentos menu;
+        menu.menuHorasExtra();
+
+    break;
+    }
+    case 3:{
+        system("cls");
+        Descuentos menu;
+        menu.menuTotalPago();
+        break;
+        }
+    case 4:{
+        system("cls");
+        Porcentajes menu;
+        menu.menuporcentajes();
+        break;
+        }
+    case 5:{
+        system("cls");
+        HorasExtra menu;
+        menu.menuHorasExtra();
+        break;
+        }
+    case 6:{
+        system("cls");
+        menuCatalogos(userName);
+        break;
+    }
+    default:
+        cout << "Opcion invalida... Intente otra vez...";
+
+    }
+    }while(repetir);
+}
+

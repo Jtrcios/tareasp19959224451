@@ -11,6 +11,9 @@
 #include "Puestos.h"
 #include "Departamento.h"
 #include "Bitacora.h"
+#include "Porcentajes.h"
+#include "HorasExtra.h"
+#include "Informes.h"
 
 using namespace std;
 
@@ -21,6 +24,7 @@ class Menus
         string menuCata(string nombreUsuario);
         string subMenuEmpleados(string nombreUsuario);
         string subMenuInf(string nombreUsuario);
+        string menuProcesos(string nombreUsuario);
 
     protected:
 

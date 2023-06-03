@@ -18,7 +18,7 @@
 	<iomanip>
 	"Menus.h"
 
-1685767542 c:\users\joset\onedrive\escritorio\progra1\tareasp19959224451\proyectojoseturcios\nominajoseturcios\nominajoseturcios\include\menus.h
+1685769918 c:\users\joset\onedrive\escritorio\progra1\tareasp19959224451\proyectojoseturcios\nominajoseturcios\nominajoseturcios\include\menus.h
 	<iostream>
 	<fstream>
 	<stdlib.h>
@@ -30,6 +30,9 @@
 	"Puestos.h"
 	"Departamento.h"
 	"Bitacora.h"
+	"Porcentajes.h"
+	"HorasExtra.h"
+	"Informes.h"
 
 1685765232 c:\users\joset\onedrive\escritorio\progra1\tareasp19959224451\proyectojoseturcios\nominajoseturcios\nominajoseturcios\include\empleadosplanilla.h
 	<iostream>
@@ -92,4 +95,86 @@
 
 1685767562 source:c:\users\joset\onedrive\escritorio\progra1\tareasp19959224451\proyectojoseturcios\nominajoseturcios\nominajoseturcios\src\usuarioplanilla.cpp
 	"UsuarioPlanilla.h"
+
+1685769527 c:\users\joset\onedrive\escritorio\progra1\tareasp19959224451\proyectojoseturcios\nominajoseturcios\nominajoseturcios\include\porcentajes.h
+	<iostream>
+	<fstream>
+	<stdlib.h>
+	<cstdlib>
+	<conio.h>
+	<iomanip>
+	"Menus.h"
+	"Bitacora.h"
+
+1685769303 c:\users\joset\onedrive\escritorio\progra1\tareasp19959224451\proyectojoseturcios\nominajoseturcios\nominajoseturcios\include\horasextra.h
+	<iostream>
+	<fstream>
+	<stdlib.h>
+	<cstdlib>
+	<conio.h>
+	<iomanip>
+	"Menus.h"
+	"Bitacora.h"
+
+1685769481 c:\users\joset\onedrive\escritorio\progra1\tareasp19959224451\proyectojoseturcios\nominajoseturcios\nominajoseturcios\include\informes.h
+	<iostream>
+	<fstream>
+	<stdlib.h>
+	<cstdlib>
+	<conio.h>
+	<iomanip>
+	"Menus.h"
+	"Bitacora.h"
+
+1685769305 source:c:\users\joset\onedrive\escritorio\progra1\tareasp19959224451\proyectojoseturcios\nominajoseturcios\nominajoseturcios\src\horasextra.cpp
+	"HorasExtra.h"
+	<iostream>
+	<fstream>
+	<stdlib.h>
+	<cstdlib>
+	<conio.h>
+	<iomanip>
+	"Puestos.h"
+
+1685769398 source:c:\users\joset\onedrive\escritorio\progra1\tareasp19959224451\proyectojoseturcios\nominajoseturcios\nominajoseturcios\src\descuentos.cpp
+	"Descuentos.h"
+	<iostream>
+	<fstream>
+	<stdlib.h>
+	<cstdlib>
+	<conio.h>
+	<iomanip>
+	"Puestos.h"
+	"Porcentajes.h"
+	"HorasExtra.h"
+
+1685769377 c:\users\joset\onedrive\escritorio\progra1\tareasp19959224451\proyectojoseturcios\nominajoseturcios\nominajoseturcios\include\descuentos.h
+	<iostream>
+	<fstream>
+	<stdlib.h>
+	<cstdlib>
+	<conio.h>
+	<iomanip>
+	"Menus.h"
+	"Bitacora.h"
+
+1685769456 source:c:\users\joset\onedrive\escritorio\progra1\tareasp19959224451\proyectojoseturcios\nominajoseturcios\nominajoseturcios\src\informes.cpp
+	"Informes.h"
+	<iostream>
+	<fstream>
+	<stdlib.h>
+	<cstdlib>
+	<conio.h>
+	<iomanip>
+	"Puestos.h"
+
+1685769563 source:c:\users\joset\onedrive\escritorio\progra1\tareasp19959224451\proyectojoseturcios\nominajoseturcios\nominajoseturcios\src\porcentajes.cpp
+	"Porcentajes.h"
+	<iostream>
+	<fstream>
+	<stdlib.h>
+	<cstdlib>
+	<conio.h>
+	<iomanip>
+	"Puestos.h"
 
