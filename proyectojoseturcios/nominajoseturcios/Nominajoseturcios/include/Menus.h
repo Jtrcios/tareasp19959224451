@@ -6,20 +6,21 @@
 #include<cstdlib>
 #include<conio.h>
 #include<iomanip>
+#include "UsuarioPlanilla.h"
 #include "EmpleadosPlanilla.h"
-#include "Departamento.h"
 #include "Puestos.h"
+#include "Departamento.h"
 #include "Bitacora.h"
-#include "Usuario.h"
 
 using namespace std;
+
 class Menus
 {
     public:
-        string menu(string nombreUsuario);
-        void menuCatalogos();
-        void subMenu();
-        void DepartamentosPlanilla();
+        string menuI(string nombreUsuario);
+        string menuCata(string nombreUsuario);
+        string subMenuEmpleados(string nombreUsuario);
+        string subMenuInf(string nombreUsuario);
 
     protected:
 

@@ -1,7 +1,10 @@
 #include "EmpleadosPlanilla.h"
 
-void EmpleadosPlanilla::menuEmpleadosPlanilla()
+Bitacora enviarDatosE;
+Menus regresarMenuE;
+string EmpleadosPlanilla::menuEmpleadosPlanilla(string nombreUsuario)
 {
+    string userName = nombreUsuario;
     system("cls");
     EmpleadosPlanilla menu;
     int choice;
@@ -11,7 +14,10 @@ void EmpleadosPlanilla::menuEmpleadosPlanilla()
     {
 	system("cls");
 
-	cout<<"\t\t\t---------------------------------------"<<endl;
+	cout << "\t\t\t-------------------------------------------------\n";
+    cout << "\t\t\t|                  !Hola " << userName << "!                  |" <<endl;
+    cout << "\t\t\t-------------------------------------------------\n";
+    cout << "\n\t\t\t-----------------------------------\n";
 	cout<<"\t\t\t |   Bienvenido al Menu de Empleados  |"<<endl;
 	cout<<"\t\t\t---------------------------------------"<<endl;
 	cout<<"\t\t\t 1. Ingresar Datos de Empleados "<<endl;
@@ -37,26 +43,31 @@ void EmpleadosPlanilla::menuEmpleadosPlanilla()
     		cout<<"\n\t\t\t Agregar Otro Empleado (Y,N): ";
     		cin>>x;
 		}while(x=='y'||x=='Y');
+		enviarDatosE.ingresoDatosBi(userName,"7100","ING");
 		break;
 	case 2:
 	    system("cls");
 		menu.buscarEmpleado();
+		enviarDatosE.ingresoDatosBi(userName,"7110","BUS");
 		break;
 	case 3:
 	    system("cls");
 		menu.modificarEmpleado();
+		enviarDatosE.ingresoDatosBi(userName,"7120","MOD");
 		break;
 	case 4:
 	    system("cls");
 		menu.borrarEmpleado();
+		enviarDatosE.ingresoDatosBi(userName,"7130","DEL");
 		break;
     case 5:
 		system("cls");
 		menu.imprimirEmpleados();
+		enviarDatosE.ingresoDatosBi(userName,"7140","IMP");
 		break;
 	case 6:
 	    system("cls");
-		repetir = false;
+		regresarMenuE.menuCata(userName);
 		break;
 	default:
 		cout<<"\n\t\t\t Opcion invalida...Por favor prueba otra vez..";
@@ -67,10 +78,9 @@ void EmpleadosPlanilla::menuEmpleadosPlanilla()
 
 void EmpleadosPlanilla::insertarEmpleado()
 {
-    string accion = "7001";
+
 	fstream file;
-	cout<<"\n------------------------------------------------------------------------------------------------------------------------";
-	cout<<"\n-------------------------------------------------Alta (Ingreso) de Empleados -------------------------------------------"<<endl;
+	cout<<"\n-------------------------------------------------Ingreso de Empleados -------------------------------------------"<<endl;
 	cout<<"\t\t\tIngresa Id del Empleado           : ";
 	cin>>idEmpleado;
 	cout<<"\t\t\tIngresa Nombre del Empleado       : ";
@@ -86,11 +96,12 @@ void EmpleadosPlanilla::insertarEmpleado()
 	file.open("EmpleadoPlanilla.txt", ios::app | ios::out);
 	file <<std::left<<std::setw(15)<< idEmpleado <<std::left<<std::setw(15)<< nombreEmpleado <<std::left<<std::setw(15)<< apellidoEmpleado <<std::left<<std::setw(15)<< dpiEmpleado <<std::left<<std::setw(15)<< direccionEmpleado <<std::left<<std::setw(15)<< telefonoEmpleado << "\n";
 	file.close();
+
 }
 
 void EmpleadosPlanilla::buscarEmpleado()
 {
-    string accion = "7002";
+
     fstream file;
 	int found=0;
 	file.open("EmpleadoPlanilla.txt",ios::in);
@@ -126,11 +137,12 @@ void EmpleadosPlanilla::buscarEmpleado()
 		}
 		file.close();
 	}
+
 }
 
 void EmpleadosPlanilla::modificarEmpleado()
 {
-    string accion = "7003";
+
     fstream file,file1;
 	string participant_id;
 	int found=0;
@@ -178,11 +190,12 @@ void EmpleadosPlanilla::modificarEmpleado()
 		remove("EmpleadoPlanilla.txt");
 		rename("Record.txt","EmpleadoPlanilla.txt");
 	}
+
 }
 
 void EmpleadosPlanilla::borrarEmpleado()
 {
-    string accion = "7004";
+
     fstream file,file1;
 	string participant_id;
 	int found=0;
@@ -221,18 +234,20 @@ void EmpleadosPlanilla::borrarEmpleado()
 		remove("EmpleadoPlanilla.txt");
 		rename("Record.txt","EmpleadoPlanilla.txt");
 	}
+
 }
 
 void EmpleadosPlanilla::imprimirEmpleados()
 {
-   string accion = "7005";
+
+
    fstream file;
 	int total=0;
 	cout<<"\n-------------------------Imprimir Informe de Empleados -------------------------"<<endl;
 	file.open("EmpleadoPlanilla.txt",ios::in);
 	if(!file)
 	{
-		cout<<"\n\t\t\tNo hay informaci�n...";
+		cout<<"\n\t\t\tSin informacion...";
 		file.close();
 	}
 	else
@@ -255,4 +270,6 @@ void EmpleadosPlanilla::imprimirEmpleados()
 		}
 	}
 	file.close();
+
 }
+

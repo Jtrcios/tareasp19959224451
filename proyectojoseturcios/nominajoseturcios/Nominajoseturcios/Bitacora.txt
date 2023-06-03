@@ -1,0 +1,16 @@
+Turcios        7100           ING            Fri Jun 02 22:55:16 2023
+
+Turcios        7140           IMP            Fri Jun 02 22:55:38 2023
+
+Turcios        7140           IMP            Fri Jun 02 22:56:05 2023
+
+Turcios        7200           ING            Fri Jun 02 23:00:41 2023
+
+Turcios        7140           IMP            Fri Jun 02 23:02:08 2023
+
+Turcios        7240           IMP            Fri Jun 02 23:02:23 2023
+
+Turcios        7300           ING            Fri Jun 02 23:02:55 2023
+
+Turcios        7340           IMP            Fri Jun 02 23:03:27 2023
+

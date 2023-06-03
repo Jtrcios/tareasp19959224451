@@ -7,18 +7,18 @@
 #include<conio.h>
 #include<iomanip>
 #include "Menus.h"
-#include "Bitacora.h"
+
 using namespace std;
 
 class Puestos
 {
     public:
-        void menuPuestos();
+        string menuPuestos(string nombreUsuario);
         void insertarPuestos();
-		void modificarPuestos();
+		void modPuestos();
 		void buscarPuestos();
 		void borrarPuestos();
-		void imprimirPuestos();
+		void impPuestos();
 
 
     protected:

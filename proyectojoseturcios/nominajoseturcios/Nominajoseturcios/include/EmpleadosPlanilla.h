@@ -7,13 +7,14 @@
 #include<conio.h>
 #include<iomanip>
 #include "Menus.h"
-#include "Bitacora.h"
+#include "UsuarioPlanilla.h"
+
 using namespace std;
 
 class EmpleadosPlanilla
 {
     public:
-        void menuEmpleadosPlanilla();
+        string  menuEmpleadosPlanilla(string nombreUsuario);
         void insertarEmpleado();
 		void modificarEmpleado();
 		void buscarEmpleado();

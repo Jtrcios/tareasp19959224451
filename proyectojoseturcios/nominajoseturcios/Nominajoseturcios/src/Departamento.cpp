@@ -1,7 +1,10 @@
 #include "Departamento.h"
 
-void Departamento::Departamentos ()
+Menus regresarMenu;
+Bitacora enviarDatosD;
+string Departamento::DepartamentosPlanilla(string nombreUsuario)
 {
+    string userName = nombreUsuario;
      system("cls");
      Departamento menu2;
     int choice;
@@ -10,8 +13,11 @@ void Departamento::Departamentos ()
 	do
     {
      system("cls");
-    //cout <<"\t\t\tUsuario: " << usuarioRegistrado.getNombre() <<endl;
-	cout<<"\t\t\t---------------------------------------"<<endl;
+
+	cout << "\t\t\t-------------------------------------------------\n";
+    cout << "\t\t\t|                  !Hola " << userName << "!                  |" <<endl;
+    cout << "\t\t\t-------------------------------------------------\n";
+    cout << "\n\t\t\t-----------------------------------\n";
 	cout<<"\t\t\t |   Bienvenido al Menu de Departamentos  |"<<endl;
 	cout<<"\t\t\t---------------------------------------"<<endl;
 	cout<<"\t\t\t 1. Ingresar nuevo departamento"<<endl;
@@ -19,7 +25,7 @@ void Departamento::Departamentos ()
 	cout<<"\t\t\t 3. Modificar Departamento"<<endl;
 	cout<<"\t\t\t 4. Eliminar Departamento"<<endl;
 	cout<<"\t\t\t 5. Imprimir Datos de los Departamentos"<<endl;
-	cout<<"\t\t\t 6. Exit"<<endl;
+	cout<<"\t\t\t 6. Regresar"<<endl;
 
 	cout<<"\t\t\t-------------------------------"<<endl;
 	cout<<"\t\t\tOpcion a escoger:[1/2/3/4/5/6]"<<endl;
@@ -30,47 +36,52 @@ void Departamento::Departamentos ()
         switch(choice)
         {
             case 1:
-                menu2.NuevosDepartamentos();
+                menu2.NuevosDepa();
                 cout<<"Guardado Con Exito"<<endl;
             system("cls");
+            enviarDatosD.ingresoDatosBi(userName,"7300","ING");
             break;
 
             case 2:
-                menu2.BuscarDepartamentos();
+                menu2.BuscarDepa();
             system("cls");
+            enviarDatosD.ingresoDatosBi(userName,"7310","SRC");
             break;
 
             case 3:
-                menu2.ModificarDepartamentos();
+                menu2.ModificarDepa();
             system("cls");
+            enviarDatosD.ingresoDatosBi(userName,"7320","MOD");
             break;
 
             case 4:
-                menu2.eliminarDepartamento();
+                menu2.eliminarDepa();
             system("cls");
+            enviarDatosD.ingresoDatosBi(userName,"7330","DEL");
             break;
 
             case 5:
-                menu2.imprimirDepartamento();
+                menu2.imprimirDepa();
             system("cls");
+            enviarDatosD.ingresoDatosBi(userName,"7340","IMP");
             break;
 
             case 6:
 	    system("cls");
-		repetir = false;
+		regresarMenu.menuCata(userName);
 		break;
         default:
 		cout<<"\n\t\t\t Opcion invalida...Por favor prueba otra vez..";
 
         }
         getch();
-    }while(repetir);
+    }while(choice!=6);
 }
 
-void Departamento::NuevosDepartamentos(){
+void Departamento::NuevosDepa(){
     fstream file;
     cout<<"\n------------------------------------------------------------------------------------------------------------------------";
-	cout<<"\n-------------------------------------------------Alta (Ingreso) de Departamento -------------------------------------------"<<endl;
+	cout<<"\n-------------------------------------------------Ingreso de Departamentos -------------------------------------------"<<endl;
 	cout<<"\t\t\tIngresa Id del Departamento       : ";
 	cin>>idDepartamento;
 	cout<<"\t\t\tIngresa Nombre del Departamento   : ";
@@ -85,7 +96,7 @@ void Departamento::NuevosDepartamentos(){
 	getch();
 }
 
-void Departamento::BuscarDepartamentos(){
+void Departamento::BuscarDepa(){
     fstream file;
 	int found=0;
 	file.open("DepartamentosPlanilla.txt",ios::in);
@@ -122,7 +133,7 @@ void Departamento::BuscarDepartamentos(){
 	}
 }
 
-void Departamento::ModificarDepartamentos(){
+void Departamento::ModificarDepa(){
 
     fstream file,file1;
 	string participant_id;
@@ -170,12 +181,12 @@ void Departamento::ModificarDepartamentos(){
 	}
 }
 
-void Departamento::eliminarDepartamento(){
+void Departamento::eliminarDepa(){
 
  fstream file,file1;
 	string participant_id;
 	int found=0;
-	cout<<"\n-------------------------Baja (Borrado) de Departamento-------------------------"<<endl;
+	cout<<"\n-------------------------Borrar Datos de Departamento-------------------------"<<endl;
 	file.open("DepartamentosPlanilla.txt",ios::in);
 	if(!file)
 	{
@@ -214,7 +225,7 @@ void Departamento::eliminarDepartamento(){
 	}
 }
 
-void Departamento::imprimirDepartamento(){
+void Departamento::imprimirDepa(){
     system("cls");
     fstream file;
 	int total=0;
@@ -231,7 +242,7 @@ void Departamento::imprimirDepartamento(){
 		while(!file.eof())
 		{
 			total++;
-			cout<<"\n\n\t\t\t Id del Departamento           : "<<idDepartamento<<endl;
+			cout<<"\n\n\t\t\t Id del Departamento                 : "<<idDepartamento<<endl;
 			cout<<"\t\t\t Nombre del Departamento           : "<<nombreDepartamento<<endl;
 			cout<<"\t\t\t Nombre del Encargado              : "<<nombreEncargado<<endl;
 			cout<<"\t\t\t Telefono del Departamento         : "<<telefonoDepartamento<<endl;

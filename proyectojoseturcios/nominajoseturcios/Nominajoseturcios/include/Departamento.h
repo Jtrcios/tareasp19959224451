@@ -7,18 +7,19 @@
 #include<conio.h>
 #include<iomanip>
 #include "Menus.h"
-using namespace std;
 
+
+using namespace std;
 
 class Departamento
 {
     public:
-      void Departamentos();
-      void NuevosDepartamentos();
-      void BuscarDepartamentos();
-      void ModificarDepartamentos();
-      void eliminarDepartamento();
-      void imprimirDepartamento();
+      string DepartamentosPlanilla(string nombreUsuario);
+      void NuevosDepa();
+      void BuscarDepa();
+      void ModificarDepa();
+      void eliminarDepa();
+      void imprimirDepa();
 
 
     protected:

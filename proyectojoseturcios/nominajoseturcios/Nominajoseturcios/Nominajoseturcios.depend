@@ -1,0 +1,95 @@
+# depslib dependency file v1.0
+1685768144 source:c:\users\joset\onedrive\escritorio\progra1\tareasp19959224451\proyectojoseturcios\nominajoseturcios\nominajoseturcios\main.cpp
+	<iostream>
+	<cstdlib>
+	<fstream>
+	<stdlib.h>
+	<cstdlib>
+	<conio.h>
+	<iomanip>
+	"UsuarioPlanilla.h"
+
+1685766741 c:\users\joset\onedrive\escritorio\progra1\tareasp19959224451\proyectojoseturcios\nominajoseturcios\nominajoseturcios\include\usuarioplanilla.h
+	<iostream>
+	<fstream>
+	<stdlib.h>
+	<cstdlib>
+	<conio.h>
+	<iomanip>
+	"Menus.h"
+
+1685767542 c:\users\joset\onedrive\escritorio\progra1\tareasp19959224451\proyectojoseturcios\nominajoseturcios\nominajoseturcios\include\menus.h
+	<iostream>
+	<fstream>
+	<stdlib.h>
+	<cstdlib>
+	<conio.h>
+	<iomanip>
+	"UsuarioPlanilla.h"
+	"EmpleadosPlanilla.h"
+	"Puestos.h"
+	"Departamento.h"
+	"Bitacora.h"
+
+1685765232 c:\users\joset\onedrive\escritorio\progra1\tareasp19959224451\proyectojoseturcios\nominajoseturcios\nominajoseturcios\include\empleadosplanilla.h
+	<iostream>
+	<fstream>
+	<stdlib.h>
+	<cstdlib>
+	<conio.h>
+	<iomanip>
+	"Menus.h"
+	"UsuarioPlanilla.h"
+
+1685768036 c:\users\joset\onedrive\escritorio\progra1\tareasp19959224451\proyectojoseturcios\nominajoseturcios\nominajoseturcios\include\puestos.h
+	<iostream>
+	<fstream>
+	<stdlib.h>
+	<cstdlib>
+	<conio.h>
+	<iomanip>
+	"Menus.h"
+
+1685767163 c:\users\joset\onedrive\escritorio\progra1\tareasp19959224451\proyectojoseturcios\nominajoseturcios\nominajoseturcios\include\departamento.h
+	<iostream>
+	<fstream>
+	<stdlib.h>
+	<cstdlib>
+	<conio.h>
+	<iomanip>
+	"Menus.h"
+
+1685766773 c:\users\joset\onedrive\escritorio\progra1\tareasp19959224451\proyectojoseturcios\nominajoseturcios\nominajoseturcios\include\bitacora.h
+	<iostream>
+	<fstream>
+	<stdlib.h>
+	<cstdlib>
+	<conio.h>
+	<iomanip>
+	<ctime>
+
+1685766780 source:c:\users\joset\onedrive\escritorio\progra1\tareasp19959224451\proyectojoseturcios\nominajoseturcios\nominajoseturcios\src\bitacora.cpp
+	"Bitacora.h"
+
+1685767306 source:c:\users\joset\onedrive\escritorio\progra1\tareasp19959224451\proyectojoseturcios\nominajoseturcios\nominajoseturcios\src\departamento.cpp
+	"Departamento.h"
+
+1685767313 source:c:\users\joset\onedrive\escritorio\progra1\tareasp19959224451\proyectojoseturcios\nominajoseturcios\nominajoseturcios\src\empleadosplanilla.cpp
+	"EmpleadosPlanilla.h"
+
+1685767556 source:c:\users\joset\onedrive\escritorio\progra1\tareasp19959224451\proyectojoseturcios\nominajoseturcios\nominajoseturcios\src\menus.cpp
+	"Menus.h"
+	<iostream>
+	<fstream>
+	<stdlib.h>
+	<cstdlib>
+	<conio.h>
+	<iomanip>
+	<ctime>
+
+1685768499 source:c:\users\joset\onedrive\escritorio\progra1\tareasp19959224451\proyectojoseturcios\nominajoseturcios\nominajoseturcios\src\puestos.cpp
+	"Puestos.h"
+
+1685767562 source:c:\users\joset\onedrive\escritorio\progra1\tareasp19959224451\proyectojoseturcios\nominajoseturcios\nominajoseturcios\src\usuarioplanilla.cpp
+	"UsuarioPlanilla.h"
+

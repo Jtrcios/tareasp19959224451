@@ -7,13 +7,14 @@
 #include<conio.h>
 #include<iomanip>
 #include <ctime>
+
 using namespace std;
 
 class Bitacora
 {
     public:
-        string ingresoDatosBit(string nombreUsuario, string numeAccion, string accionRealizada);
-        void imprimirDatosBit();
+        string ingresoDatosBi(string nombreUsuario, string numeAccion, string accionRealizada);
+        void imprimirDatosBitacora();
 
 
     protected:

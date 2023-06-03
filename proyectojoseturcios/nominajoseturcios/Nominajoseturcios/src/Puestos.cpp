@@ -1,7 +1,10 @@
 #include "Puestos.h"
 
-void Puestos::menuPuestos()
+Menus regresarMenuP;
+Bitacora enviarDatosP;
+string Puestos::menuPuestos(string nombreUsuario)
 {
+    string userName = nombreUsuario;
     system("cls");
     Puestos menu;
     int choice;
@@ -11,15 +14,18 @@ void Puestos::menuPuestos()
     {
 	system("cls");
 
-	cout<<"\t\t\t---------------------------------------"<<endl;
+	cout << "\t\t\t-------------------------------------------------\n";
+    cout << "\t\t\t|                  !Hola " << userName << "!                  |" <<endl;
+    cout << "\t\t\t-------------------------------------------------\n";
+    cout << "\n\t\t\t-----------------------------------\n";
 	cout<<"\t\t\t |   Bienvenido al Menu de Puestos  |"<<endl;
-	cout<<"\t\t\t---------------------------------------"<<endl;
-	cout<<"\t\t\t 1. Ingresar Datos de los Puestos "<<endl;
+	cout<<"\t\t\t-------------------------------------"<<endl;
+	cout<<"\n\t\t\t 1. Ingresar Datos de los Puestos "<<endl;
 	cout<<"\t\t\t 2. Buscar Puesto"<<endl;
 	cout<<"\t\t\t 3. Modificar Datos del Puesto"<<endl;
 	cout<<"\t\t\t 4. Elimidar Puestos"<<endl;
 	cout<<"\t\t\t 5. Imprimir Datos de Puestos"<<endl;
-	cout<<"\t\t\t 6. Exit"<<endl;
+	cout<<"\t\t\t 6. Regresar"<<endl;
 
 	cout<<"\t\t\t-------------------------------"<<endl;
 	cout<<"\t\t\tOpcion a escoger:[1/2/3/4/5/6]"<<endl;
@@ -37,26 +43,31 @@ void Puestos::menuPuestos()
     		cout<<"\n\t\t\t Agregar Otro Empleado (Y,N): ";
     		cin>>x;
 		}while(x=='y'||x=='Y');
+		enviarDatosP.ingresoDatosBi(userName,"7200","ING");
 		break;
 	case 2:
 	    system("cls");
 		menu.buscarPuestos();
+		enviarDatosP.ingresoDatosBi(userName,"7210","SRC");
 		break;
 	case 3:
 	    system("cls");
-		menu.modificarPuestos();
+		menu.modPuestos();
+		enviarDatosP.ingresoDatosBi(userName,"7220","MOD");
 		break;
 	case 4:
 	    system("cls");
 		menu.borrarPuestos();
+		enviarDatosP.ingresoDatosBi(userName,"7230","DEL");
 		break;
     case 5:
 		system("cls");
-		menu.imprimirPuestos();
+		menu.impPuestos();
+		enviarDatosP.ingresoDatosBi(userName,"7240","IMP");
 		break;
 	case 6:
 	    system("cls");
-		repetir = false;
+		regresarMenuP.menuCata(userName);
 		break;
 	default:
 		cout<<"\n\t\t\t Opcion invalida...Por favor prueba otra vez..";
@@ -71,15 +82,15 @@ void Puestos::insertarPuestos()
 	fstream file;
 	cout<<"\n------------------------------------------------------------------------------------------------------------------------";
 	cout<<"\n-------------------------------------------------Alta (Ingreso) de Puestos -------------------------------------------"<<endl;
-	cout<<"\t\t\tIngresa Id del Puesto           : ";
+	cout<<"\t\t\tIngresa Id del Puesto           : "<<endl;
 	cin>>idPuesto;
-	cout<<"\t\t\tIngresa Nombre del PPuesto       : ";
+	cout<<"\t\t\tIngresa Nombre del Puesto       : "<<endl;
 	cin>>nombrePuesto;
-	cout<<"\t\t\tIngresa el Encargado del Puesto        : ";
+	cout<<"\t\t\tIngresa el Encargado del Puesto        : "<<endl;
 	cin>>encargadoPuesto;
-	cout<<"\t\t\tIngresa Profesion del Encargado          : ";
+	cout<<"\t\t\tIngresa Profesion del Encargado          : "<<endl;
 	cin>>tituloPuesto;
-	cout<<"\t\t\tIngresa Salario del Empleado    : ";
+	cout<<"\t\t\tIngresa Salario del Empleado    : "<<endl;
 	cin>>salarioPuesto;
 	file.open("Puestos.txt", ios::app | ios::out);
 	file <<std::left<<std::setw(15)<< idPuesto <<std::left<<std::setw(15)<< nombrePuesto <<std::left<<std::setw(15)<< encargadoPuesto <<std::left<<std::setw(15)<< tituloPuesto <<std::left<<std::setw(15)<< salarioPuesto << "\n";
@@ -125,7 +136,7 @@ void Puestos::buscarPuestos()
 	}
 }
 
-void Puestos::modificarPuestos()
+void Puestos::modPuestos()
 {
     string accion = "7003";
     fstream file,file1;
@@ -218,7 +229,7 @@ void Puestos::borrarPuestos()
 	}
 }
 
-void Puestos::imprimirPuestos()
+void Puestos::impPuestos()
 {
    string accion = "7005";
    fstream file;
@@ -240,7 +251,7 @@ void Puestos::imprimirPuestos()
 			cout<<"\t\t\t Nombre Puesto           : "<<nombrePuesto<<endl;
 			cout<<"\t\t\t Encargado del Puesto    : "<<encargadoPuesto<<endl;
 			cout<<"\t\t\t Profesion del Encargado : "<<tituloPuesto<<endl;
-			cout<<"\t\t\t Saario del Puesto       : "<<salarioPuesto<<endl;
+			cout<<"\t\t\t Salario del Puesto       : "<<salarioPuesto<<endl;
         file >> idPuesto >> nombrePuesto >> encargadoPuesto >> tituloPuesto >> salarioPuesto;
 		}
 		if(total==0)
