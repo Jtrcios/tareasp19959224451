@@ -1,0 +1,45 @@
+# depslib dependency file v1.0
+1685750860 source:c:\users\joset\onedrive\escritorio\progra1\tareasp19959224451\proyectojoseturcios\robot\robotjoseturcios\src\gamemap.cpp
+	"gamemap.h"
+	<iostream>
+	<fstream>
+
+1685742554 c:\users\joset\onedrive\escritorio\progra1\tareasp19959224451\proyectojoseturcios\robot\robotjoseturcios\include\gamemap.h
+	"mapcell.h"
+
+1685742571 c:\users\joset\onedrive\escritorio\progra1\tareasp19959224451\proyectojoseturcios\robot\robotjoseturcios\include\mapcell.h
+
+1685742631 source:c:\users\joset\onedrive\escritorio\progra1\tareasp19959224451\proyectojoseturcios\robot\robotjoseturcios\src\mapcell.cpp
+	"mapcell.h"
+	<iostream>
+
+1685745604 source:c:\users\joset\onedrive\escritorio\progra1\tareasp19959224451\proyectojoseturcios\robot\robotjoseturcios\src\player.cpp
+	"player.h"
+	<iostream>
+	<fstream>
+
+1685742585 c:\users\joset\onedrive\escritorio\progra1\tareasp19959224451\proyectojoseturcios\robot\robotjoseturcios\include\player.h
+
+1685756415 source:c:\users\joset\onedrive\escritorio\progra1\tareasp19959224451\proyectojoseturcios\robot\robotjoseturcios\main.cpp
+	<iostream>
+	"player.h"
+	"mapcell.h"
+	"gamemap.h"
+	"gamemap2.h"
+
+1685751183 source:c:\users\joset\onedrive\escritorio\progra1\tareasp19959224451\proyectojoseturcios\robot\robotjoseturcios\src\gamemap2.cpp
+	"gamemap2.h"
+	<iostream>
+	<fstream>
+
+1685752373 c:\users\joset\onedrive\escritorio\progra1\tareasp19959224451\proyectojoseturcios\robot\robotjoseturcios\include\gamemap2.h
+	"mapcell.h"
+
+1685756429 source:c:\users\joset\onedrive\escritorio\progra1\tareasp19959224451\proyectojoseturcios\robot\robotjoseturcios\src\gamemap3.cpp
+	"gamemap3.h"
+	<iostream>
+	<fstream>
+
+1685756304 c:\users\joset\onedrive\escritorio\progra1\tareasp19959224451\proyectojoseturcios\robot\robotjoseturcios\include\gamemap3.h
+	"mapcell.h"
+
