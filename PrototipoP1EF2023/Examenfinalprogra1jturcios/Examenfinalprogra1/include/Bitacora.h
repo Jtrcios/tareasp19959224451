@@ -24,7 +24,6 @@ public:
     void agregarRegistro(const string& usuario, const string& aplicacion, const string& horaFecha, const string& accion);
     vector<Registro> obtenerRegistros() const;
     void generarArchivo(const string& nombreArchivo) const;
-
 };
 
 #endif  // BITACORA_H
