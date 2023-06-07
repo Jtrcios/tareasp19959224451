@@ -77,9 +77,9 @@ int main()
     } else
     {
       hero.resetToSafePosition();
-    }
-    }
      }
+    }
+    }
      if(map2.isGameOver==true){
          cout << "     _____                                   " << endl;
     cout << " ___|   _ |__  ____  __    _ ______  ____    " << endl;

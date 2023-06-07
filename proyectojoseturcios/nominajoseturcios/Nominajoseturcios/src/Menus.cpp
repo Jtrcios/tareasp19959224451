@@ -207,22 +207,16 @@ string Menus::subMenuInf(string nombreUsuario)
 
     case 1:{
        system("cls");
-       Descuentos menu;
-       menu.menuDescuentos();
                 break;
     }
 
     case 2:{
         system("cls");
-        Descuentos menu;
-        menu.menuHorasExtra();
 
     break;
     }
     case 3:{
         system("cls");
-        Descuentos menu;
-        menu.menuTotalPago();
         break;
         }
     case 4:{
@@ -239,7 +233,7 @@ string Menus::subMenuInf(string nombreUsuario)
         }
     case 6:{
         system("cls");
-        menuCatalogos(userName);
+        menuCata(userName);
         break;
     }
     default:
