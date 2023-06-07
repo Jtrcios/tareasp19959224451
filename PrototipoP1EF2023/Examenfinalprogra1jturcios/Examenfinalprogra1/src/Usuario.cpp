@@ -1,12 +1,12 @@
 #include "Usuario.h"
 
-Usuario::Usuario(const std::string& nombre, const std::string& contrasena)
+Usuario::Usuario(const string& nombre, const string& contrasena)
     : nombre(nombre), contrasena(contrasena) {}
 
-std::string Usuario::getNombre() const {
+string Usuario::getNombre() const {
     return nombre;
 }
 
-std::string Usuario::getContrasena() const {
+string Usuario::getContrasena() const {
     return contrasena;
 }

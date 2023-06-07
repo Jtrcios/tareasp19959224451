@@ -1,0 +1,38 @@
+# depslib dependency file v1.0
+1686159968 source:c:\users\joset\onedrive\escritorio\progra1\tareasp19959224451\prototipop1ef2023\examenfinalprogra1jturcios\examenfinalprogra1\main.cpp
+	"Menu.h"
+
+1686160617 c:\users\joset\onedrive\escritorio\progra1\tareasp19959224451\prototipop1ef2023\examenfinalprogra1jturcios\examenfinalprogra1\include\menu.h
+	"ManejadorUsuarios.h"
+	"Catalogo.h"
+	"Bitacora.h"
+
+1686160215 c:\users\joset\onedrive\escritorio\progra1\tareasp19959224451\prototipop1ef2023\examenfinalprogra1jturcios\examenfinalprogra1\include\manejadorusuarios.h
+	"Usuario.h"
+	<vector>
+
+1686160153 c:\users\joset\onedrive\escritorio\progra1\tareasp19959224451\prototipop1ef2023\examenfinalprogra1jturcios\examenfinalprogra1\include\usuario.h
+	<string>
+
+1686160296 c:\users\joset\onedrive\escritorio\progra1\tareasp19959224451\prototipop1ef2023\examenfinalprogra1jturcios\examenfinalprogra1\include\catalogo.h
+	<string>
+	<vector>
+
+1686160698 c:\users\joset\onedrive\escritorio\progra1\tareasp19959224451\prototipop1ef2023\examenfinalprogra1jturcios\examenfinalprogra1\include\bitacora.h
+	<string>
+	<vector>
+	<iostream>
+
+1686160296 source:c:\users\joset\onedrive\escritorio\progra1\tareasp19959224451\prototipop1ef2023\examenfinalprogra1jturcios\examenfinalprogra1\src\catalogo.cpp
+	"Catalogo.h"
+
+1686160235 source:c:\users\joset\onedrive\escritorio\progra1\tareasp19959224451\prototipop1ef2023\examenfinalprogra1jturcios\examenfinalprogra1\src\manejadorusuarios.cpp
+	"ManejadorUsuarios.h"
+
+1686160188 source:c:\users\joset\onedrive\escritorio\progra1\tareasp19959224451\prototipop1ef2023\examenfinalprogra1jturcios\examenfinalprogra1\src\usuario.cpp
+	"Usuario.h"
+
+1686160581 source:c:\users\joset\onedrive\escritorio\progra1\tareasp19959224451\prototipop1ef2023\examenfinalprogra1jturcios\examenfinalprogra1\src\bitacora.cpp
+	"Bitacora.h"
+	<fstream>
+

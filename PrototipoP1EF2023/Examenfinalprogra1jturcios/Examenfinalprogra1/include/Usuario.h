@@ -2,17 +2,18 @@
 #define USUARIO_H
 
 #include <string>
+using namespace std;
 
 // Clase para representar un usuario
 class Usuario {
 private:
-    std::string nombre;
-    std::string contrasena;
+string nombre;
+string contrasena;
 public:
-    Usuario(const std::string& nombre, const std::string& contrasena);
+    Usuario(const string& nombre, const string& contrasena);
 
-    std::string getNombre() const;
-    std::string getContrasena() const;
+string getNombre() const;
+string getContrasena() const;
 };
 
 #endif  // USUARIO_H

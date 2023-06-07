@@ -3,17 +3,18 @@
 
 #include <string>
 #include <vector>
+using namespace std;
 
 // Clase para representar un catálogo
 class Catalogo {
 private:
-    std::vector<std::string> registros;
+    vector<string> registros;
 
 public:
-    void agregarRegistro(const std::string& registro);
-    void eliminarRegistro(const std::string& registro);
-    void modificarRegistro(const std::string& registroAnterior, const std::string& registroNuevo);
-    std::vector<std::string> obtenerRegistros() const;
+    void agregarRegistro(const string& registro);
+    void eliminarRegistro(const string& registro);
+    void modificarRegistro(const string& registroAnterior, const string& registroNuevo);
+    vector<string> obtenerRegistros() const;
 };
 
 #endif  // CATALOGO_H

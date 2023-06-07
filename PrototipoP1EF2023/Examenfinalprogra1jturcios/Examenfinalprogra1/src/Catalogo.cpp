@@ -1,10 +1,10 @@
 #include "Catalogo.h"
 
-void Catalogo::agregarRegistro(const std::string& registro) {
+void Catalogo::agregarRegistro(const string& registro) {
     registros.push_back(registro);
 }
 
-void Catalogo::eliminarRegistro(const std::string& registro) {
+void Catalogo::eliminarRegistro(const string& registro) {
     for (auto it = registros.begin(); it != registros.end(); ++it) {
         if (*it == registro) {
             registros.erase(it);
@@ -13,8 +13,8 @@ void Catalogo::eliminarRegistro(const std::string& registro) {
     }
 }
 
-void Catalogo::modificarRegistro(const std::string& registroAnterior, const std::string& registroNuevo) {
-    for (std::string& reg : registros) {
+void Catalogo::modificarRegistro(const string& registroAnterior, const string& registroNuevo) {
+    for (string& reg : registros) {
         if (reg == registroAnterior) {
             reg = registroNuevo;
             break;
@@ -22,6 +22,6 @@ void Catalogo::modificarRegistro(const std::string& registroAnterior, const std:
     }
 }
 
-std::vector<std::string> Catalogo::obtenerRegistros() const {
+vector<string> Catalogo::obtenerRegistros() const {
     return registros;
 }
