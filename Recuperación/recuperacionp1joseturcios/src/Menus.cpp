@@ -8,6 +8,7 @@
 #include <ctime>
 
 Usuario traerMenu;
+Bitacora imprimirBitacora;
 
 void Menus::menuInicial(string nombreUsuario)
 {

@@ -8,6 +8,7 @@
 #include<iomanip>
 
 #include "Usuario.h"
+#include "Bitacora.h"
 
 using namespace std;
 

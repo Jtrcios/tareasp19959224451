@@ -5,7 +5,7 @@ const string ADMINUSER = "Trcs";
 const string ADMINCONTRA = "23092002";
 string nombreUsuario, contra;
 Menus llamarMenu;
-
+Bitacora enviarDatosU;
 
 void Usuario::iniciarSesion()
 {
@@ -196,11 +196,11 @@ void Usuario::imprimirUsuario(string nombreUsuario)
     system("cls");
 	fstream file;
 	int total=0;
-	cout<<"\n-------------------------Tabla de Detalles de Usuarios -------------------------"<<endl;
+	cout<<"\n------------------------- Detalles de Usuarios -------------------------"<<endl;
 	file.open("Usuario.txt",ios::in);
 	if(!file)
 	{
-		cout<<"\n\t\t\tNo hay informaci�n...";
+		cout<<"\n\t\t\tSin informacion...";
 		file.close();
 	}
 	else
@@ -232,7 +232,7 @@ void Usuario::buscarUsuario(string nombreUsuario)
 	if(!file)
 	{
 		cout<<"\n-------------------------Datos del usuario buscado------------------------"<<endl;
-		cout<<"\n\t\t\tNo hay informacion...";
+		cout<<"\n\t\t\tSin informacion...";
 	}
 	else
 	{
@@ -270,7 +270,7 @@ void Usuario::borrarUsuario(string nombreUsuario)
 	file.open("Usuario.txt",ios::in);
 	if(!file)
 	{
-		cout<<"\n\t\t\tNo hay informacion...";
+		cout<<"\n\t\t\tSin informacion...";
 		file.close();
 	}
 	else
@@ -290,7 +290,7 @@ void Usuario::borrarUsuario(string nombreUsuario)
 			else
 			{
 				found++;
-				cout << "\n\t\t\tBorrado de Usuario exitoso";
+				cout << "\n\t\t\tUsuario borrado exitosamente";
 			}
 			file >> nombre >> contrasena;
 		}
@@ -322,7 +322,7 @@ void Usuario::dibujarPortada(string nombreArchivo)
         }
         else
         {
-            cout << "Error FATAL: el archivo de portada no pudo ser cargado" << endl;
+            cout << "ERROR : la portada no pudo ser cargada" << endl;
             system("pause");
         }
 }
