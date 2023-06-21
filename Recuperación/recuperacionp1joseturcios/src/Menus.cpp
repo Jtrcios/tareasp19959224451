@@ -9,6 +9,7 @@
 
 Usuario traerMenu;
 Bitacora imprimirBitacora;
+Clientes traerMenuC;
 
 void Menus::menuInicial(string nombreUsuario)
 {
@@ -139,7 +140,7 @@ void Menus::subMenuInformes(string nombreUsuario)
     {
     case 1:{
        system("cls");
-       imprimirBitacora.imprimirDatosBitacora();
+       imprimirBitacora.imprimirDatosBit();
     break;
     }
 

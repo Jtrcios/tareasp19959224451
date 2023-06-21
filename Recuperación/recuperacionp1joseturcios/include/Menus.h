@@ -9,6 +9,7 @@
 
 #include "Usuario.h"
 #include "Bitacora.h"
+#include "Clientes.h"
 
 using namespace std;
 

@@ -1,0 +1,53 @@
+# depslib dependency file v1.0
+1687369249 source:c:\users\joset\onedrive\escritorio\progra1\tareasp19959224451\recuperación\recuperacionp1joseturcios\main.cpp
+	<iostream>
+	<cstdlib>
+	<fstream>
+	<stdlib.h>
+	<cstdlib>
+	<conio.h>
+	<iomanip>
+	"Usuario.h"
+
+1687368944 c:\users\joset\onedrive\escritorio\progra1\tareasp19959224451\recuperación\recuperacionp1joseturcios\include\usuario.h
+	<iostream>
+	<fstream>
+	<stdlib.h>
+	<cstdlib>
+	<conio.h>
+	<iomanip>
+	"Menus.h"
+
+1687370313 c:\users\joset\onedrive\escritorio\progra1\tareasp19959224451\recuperación\recuperacionp1joseturcios\include\menus.h
+	<iostream>
+	<fstream>
+	<stdlib.h>
+	<cstdlib>
+	<conio.h>
+	<iomanip>
+	"Usuario.h"
+	"Bitacora.h"
+	"Clientes.h"
+
+1687369527 c:\users\joset\onedrive\escritorio\progra1\tareasp19959224451\recuperación\recuperacionp1joseturcios\include\bitacora.h
+	<iostream>
+	<fstream>
+	<stdlib.h>
+	<cstdlib>
+	<conio.h>
+	<iomanip>
+	<ctime>
+
+1687369523 source:c:\users\joset\onedrive\escritorio\progra1\tareasp19959224451\recuperación\recuperacionp1joseturcios\src\bitacora.cpp
+	"Bitacora.h"
+
+1687370042 c:\users\joset\onedrive\escritorio\progra1\tareasp19959224451\recuperación\recuperacionp1joseturcios\include\clientes.h
+	<iostream>
+	<fstream>
+	<stdlib.h>
+	<cstdlib>
+	<conio.h>
+	<iomanip>
+	"Bitacora.h"
+	"Menus.h"
+
