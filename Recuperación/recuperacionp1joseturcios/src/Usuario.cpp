@@ -43,7 +43,7 @@ void Usuario::iniciarSesion()
     {
         if(nombreUsuario == nombre && contra == contrasena)
         {
-            enviarDatosU.ingresoDatosBitacora(nombreUsuario,"7000","LOGIN");
+            enviarDatosU.ingresoDatosBit(nombreUsuario,"7000","LOGIN");
             llamarMenu.menuInicial(nombreUsuario);
             return;
             found++;
@@ -53,7 +53,7 @@ void Usuario::iniciarSesion()
         {
             if (nombreUsuario ==ADMINUSER && contra ==ADMINCONTRA)
             {
-                enviarDatosU.ingresoDatosBitacora(nombreUsuario,"7000","LOGIN");
+                enviarDatosU.ingresoDatosBit(nombreUsuario,"7000","LOGIN");
                 llamarMenu.menuInicial(nombreUsuario);
                 return;
                 found++;
@@ -64,7 +64,7 @@ void Usuario::iniciarSesion()
     }
     if(found==0)
     {
-       enviarDatosU.ingresoDatosBitacora(nombreUsuario,"7010", "NLOG");
+       enviarDatosU.ingresoDatosBit(nombreUsuario,"7010", "NLOG");
         cout<<"\n\t\t\t El usuario o contrase�a sin incorrectos..." << endl;
         system("pause");
     }
@@ -137,7 +137,7 @@ void Usuario::registroUsuario()
 void Usuario::modificarUsuario(string nombreUsuario)
 {
     string userName = nombreUsuario;
-                enviarDatosU.ingresoDatosBitacora(userName,"7410","MOD");
+                enviarDatosU.ingresoDatosBit(userName,"7410","MOD");
 	system("cls");
 	fstream file,file1;
 	string name, c2;
@@ -192,7 +192,7 @@ void Usuario::modificarUsuario(string nombreUsuario)
 void Usuario::imprimirUsuario(string nombreUsuario)
 {
     string userName = nombreUsuario;
-    enviarDatosU.ingresoDatosBitacora(userName,"7400","IMP");
+    enviarDatosU.ingresoDatosBit(userName,"7400","IMP");
     system("cls");
 	fstream file;
 	int total=0;
@@ -224,7 +224,7 @@ void Usuario::imprimirUsuario(string nombreUsuario)
 void Usuario::buscarUsuario(string nombreUsuario)
 {
     string userName = nombreUsuario;
-                enviarDatosU.ingresoDatosBitacora(userName,"7420","SRC");
+                enviarDatosU.ingresoDatosBit(userName,"7420","SRC");
 	system("cls");
 	fstream file;
 	int found=0;
@@ -261,7 +261,7 @@ void Usuario::buscarUsuario(string nombreUsuario)
 void Usuario::borrarUsuario(string nombreUsuario)
 {
     string userName = nombreUsuario;
-                enviarDatosU.ingresoDatosBitacora(userName,"7430","DEL");
+                enviarDatosU.ingresoDatosBit(userName,"7430","DEL");
 	system("cls");
 	fstream file,file1;
 	string name, c2;

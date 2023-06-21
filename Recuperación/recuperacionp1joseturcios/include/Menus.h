@@ -10,6 +10,8 @@
 #include "Usuario.h"
 #include "Bitacora.h"
 #include "Clientes.h"
+#include "Peliculas.h"
+#include "VentaBoletos.h"
 
 using namespace std;
 

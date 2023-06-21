@@ -10,6 +10,8 @@
 Usuario traerMenu;
 Bitacora imprimirBitacora;
 Clientes traerMenuC;
+Peliculas traerMenuPeli;
+VentaBoletos traerMenuBoletos;
 
 void Menus::menuInicial(string nombreUsuario)
 {

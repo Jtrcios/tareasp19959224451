@@ -18,7 +18,7 @@
 	<iomanip>
 	"Menus.h"
 
-1687370313 c:\users\joset\onedrive\escritorio\progra1\tareasp19959224451\recuperación\recuperacionp1joseturcios\include\menus.h
+1687371154 c:\users\joset\onedrive\escritorio\progra1\tareasp19959224451\recuperación\recuperacionp1joseturcios\include\menus.h
 	<iostream>
 	<fstream>
 	<stdlib.h>
@@ -28,6 +28,8 @@
 	"Usuario.h"
 	"Bitacora.h"
 	"Clientes.h"
+	"Peliculas.h"
+	"VentaBoletos.h"
 
 1687369527 c:\users\joset\onedrive\escritorio\progra1\tareasp19959224451\recuperación\recuperacionp1joseturcios\include\bitacora.h
 	<iostream>
@@ -50,4 +52,48 @@
 	<iomanip>
 	"Bitacora.h"
 	"Menus.h"
+
+1687370970 c:\users\joset\onedrive\escritorio\progra1\tareasp19959224451\recuperación\recuperacionp1joseturcios\include\peliculas.h
+	<iostream>
+	<fstream>
+	<stdlib.h>
+	<cstdlib>
+	<conio.h>
+	<iomanip>
+	"Bitacora.h"
+	"Menus.h"
+
+1687370537 source:c:\users\joset\onedrive\escritorio\progra1\tareasp19959224451\recuperación\recuperacionp1joseturcios\src\clientes.cpp
+	"Clientes.h"
+
+1687371067 c:\users\joset\onedrive\escritorio\progra1\tareasp19959224451\recuperación\recuperacionp1joseturcios\include\ventaboletos.h
+	<iostream>
+	<fstream>
+	<stdlib.h>
+	<cstdlib>
+	<conio.h>
+	<iomanip>
+	"Bitacora.h"
+	"Usuario.h"
+	"Clientes.h"
+	"Peliculas.h"
+
+1687371136 source:c:\users\joset\onedrive\escritorio\progra1\tareasp19959224451\recuperación\recuperacionp1joseturcios\src\menus.cpp
+	"Menus.h"
+	<iostream>
+	<fstream>
+	<stdlib.h>
+	<cstdlib>
+	<conio.h>
+	<iomanip>
+	<ctime>
+
+1687371173 source:c:\users\joset\onedrive\escritorio\progra1\tareasp19959224451\recuperación\recuperacionp1joseturcios\src\peliculas.cpp
+	"Peliculas.h"
+
+1687371233 source:c:\users\joset\onedrive\escritorio\progra1\tareasp19959224451\recuperación\recuperacionp1joseturcios\src\usuario.cpp
+	"Usuario.h"
+
+1687371238 source:c:\users\joset\onedrive\escritorio\progra1\tareasp19959224451\recuperación\recuperacionp1joseturcios\src\ventaboletos.cpp
+	"VentaBoletos.h"
 

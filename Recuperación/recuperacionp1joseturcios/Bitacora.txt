@@ -1,0 +1,20 @@
+Turcios        7000           LOGIN          Wed Jun 21 12:14:30 2023
+
+Turcios        7110           MOD            Wed Jun 21 12:14:37 2023
+
+Turcios        7110           MOD            Wed Jun 21 12:14:38 2023
+
+Turcios        7100           INS            Wed Jun 21 12:14:42 2023
+
+Turcios        7120           IMP            Wed Jun 21 12:15:06 2023
+
+Turcios        7200           INS            Wed Jun 21 12:15:17 2023
+
+Turcios        7000           LOGIN          Wed Jun 21 12:16:59 2023
+
+Turcios        7220           IMP            Wed Jun 21 12:17:04 2023
+
+Turcios        7500           VENTA          Wed Jun 21 12:17:20 2023
+
+Turcios        7400           IMP            Wed Jun 21 12:18:40 2023
+
