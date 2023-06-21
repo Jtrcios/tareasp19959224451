@@ -7,6 +7,7 @@
 #include<iomanip>
 #include <ctime>
 
+Usuario traerMenu;
 
 void Menus::menuInicial(string nombreUsuario)
 {
@@ -17,9 +18,9 @@ void Menus::menuInicial(string nombreUsuario)
     do
     {
     system("cls");
-    cout << "\n\t\t\t---------------------------------------------\n";
-    cout << "\t\t\t|        Bienvenido al Menu de el Mero Oscar    |";
-    cout << "\n\t\t\t-----------------------------------------------"<<endl;
+    cout << "\n\t\t\t----------------------------------------------------\n";
+    cout << "\t\t\t|        Bienvenido al Menu de Cine el Mero Oscar    |";
+    cout << "\n\t\t\t----------------------------------------------------"<<endl;
 
     cout << "\n\t\t\t1. Menu Catalogos"<<endl;
     cout << "\t\t\t2. Menu Procesos"<<endl;
@@ -29,7 +30,7 @@ void Menus::menuInicial(string nombreUsuario)
     cout << "\n\t\t\t| Opciones a escoger: [1] - [2] - [3] - [4]";
     cout << "\n\t\t\t---------------------------------------";
 
-    cout << "\n\n\t\t\tIngrese la opcion que desea escoger: ";
+    cout << "\n\n\t\t\tIngrese la opcion a escoger: ";
     cin >> optEscoger;
 
     switch(optEscoger)

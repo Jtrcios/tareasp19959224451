@@ -7,6 +7,8 @@
 #include<conio.h>
 #include<iomanip>
 
+#include "Usuario.h"
+
 using namespace std;
 
 class Menus
