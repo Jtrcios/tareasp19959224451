@@ -2,7 +2,7 @@
 
 Bitacora enviarDatosP;
 Menus traerMenuCat;
-void Peliculas::menuPeliculas(string nombreUsuario)
+void Peliculas::menuPeli(string nombreUsuario)
 {
     string userName = nombreUsuario;
     system("cls");
@@ -31,7 +31,7 @@ void Peliculas::menuPeliculas(string nombreUsuario)
     switch(optEscoger)
     {
     case 1:{
-    registroPeliculas(userName);
+    registroPeli(userName);
     system("cls");
 
                 break;
@@ -39,21 +39,21 @@ void Peliculas::menuPeliculas(string nombreUsuario)
 
     case 2:{
         system("cls");
-        imprimirPeliculas(userName);
+        imprimirPeli(userName);
     break;
     }
     case 3:{
         system("cls");
-        modificarPeliculas(userName);
+        modificarPeli(userName);
         break;
         }
     case 4:
         system("cls");
-       buscarPeliculas(userName);
+       buscarPeli(userName);
         break;
     case 5:
         system("cls");
-       borrarPeliculas(userName);
+       borrarPeli(userName);
         break;
     case 6:
         system("cls");
@@ -65,7 +65,7 @@ void Peliculas::menuPeliculas(string nombreUsuario)
     }
     }while(optEscoger!=6);
 }
-void Peliculas::registroPeliculas(string nombreUsuario)
+void Peliculas::registroPeli(string nombreUsuario)
 {
     string userName = nombreUsuario;
     enviarDatosP.ingresoDatosBit(userName,"7200","INS");
@@ -94,7 +94,7 @@ void Peliculas::registroPeliculas(string nombreUsuario)
 	file.close();
 }
 
-void Peliculas::modificarPeliculas(string nombreUsuario)
+void Peliculas::modificarPeli(string nombreUsuario)
 {
 string userName = nombreUsuario;
 enviarDatosP.ingresoDatosBit(userName,"7210","MOD");
@@ -151,7 +151,7 @@ enviarDatosP.ingresoDatosBit(userName,"7210","MOD");
 	}
 }
 
-void Peliculas::imprimirPeliculas(string nombreUsuario)
+void Peliculas::imprimirPeli(string nombreUsuario)
 {
     string userName = nombreUsuario;
     enviarDatosP.ingresoDatosBit(userName,"7220","IMP");
@@ -189,7 +189,7 @@ void Peliculas::imprimirPeliculas(string nombreUsuario)
 	system("pause");
 	file.close();
 }
-void Peliculas::buscarPeliculas(string nombreUsuario)
+void Peliculas::buscarPeli(string nombreUsuario)
 {
     string userName = nombreUsuario;
     enviarDatosP.ingresoDatosBit(userName,"7230","SRC");
@@ -232,7 +232,7 @@ void Peliculas::buscarPeliculas(string nombreUsuario)
 		file.close();
 	}
 }
-void Peliculas::borrarPeliculas(string nombreUsuario)
+void Peliculas::borrarPeli(string nombreUsuario)
 {
     string userName = nombreUsuario;
                 enviarDatosP.ingresoDatosBit(userName,"7240","DEL");

@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1687369249 source:c:\users\joset\onedrive\escritorio\progra1\tareasp19959224451\recuperación\recuperacionp1joseturcios\main.cpp
+1687371762 source:c:\users\joset\onedrive\escritorio\progra1\tareasp19959224451\recuperación\recuperacionp1joseturcios\main.cpp
 	<iostream>
 	<cstdlib>
 	<fstream>
@@ -9,7 +9,7 @@
 	<iomanip>
 	"Usuario.h"
 
-1687368944 c:\users\joset\onedrive\escritorio\progra1\tareasp19959224451\recuperación\recuperacionp1joseturcios\include\usuario.h
+1687371980 c:\users\joset\onedrive\escritorio\progra1\tareasp19959224451\recuperación\recuperacionp1joseturcios\include\usuario.h
 	<iostream>
 	<fstream>
 	<stdlib.h>
@@ -53,7 +53,7 @@
 	"Bitacora.h"
 	"Menus.h"
 
-1687370970 c:\users\joset\onedrive\escritorio\progra1\tareasp19959224451\recuperación\recuperacionp1joseturcios\include\peliculas.h
+1687371870 c:\users\joset\onedrive\escritorio\progra1\tareasp19959224451\recuperación\recuperacionp1joseturcios\include\peliculas.h
 	<iostream>
 	<fstream>
 	<stdlib.h>
@@ -78,7 +78,7 @@
 	"Clientes.h"
 	"Peliculas.h"
 
-1687371136 source:c:\users\joset\onedrive\escritorio\progra1\tareasp19959224451\recuperación\recuperacionp1joseturcios\src\menus.cpp
+1687371988 source:c:\users\joset\onedrive\escritorio\progra1\tareasp19959224451\recuperación\recuperacionp1joseturcios\src\menus.cpp
 	"Menus.h"
 	<iostream>
 	<fstream>
@@ -88,10 +88,10 @@
 	<iomanip>
 	<ctime>
 
-1687371173 source:c:\users\joset\onedrive\escritorio\progra1\tareasp19959224451\recuperación\recuperacionp1joseturcios\src\peliculas.cpp
+1687371940 source:c:\users\joset\onedrive\escritorio\progra1\tareasp19959224451\recuperación\recuperacionp1joseturcios\src\peliculas.cpp
 	"Peliculas.h"
 
-1687371233 source:c:\users\joset\onedrive\escritorio\progra1\tareasp19959224451\recuperación\recuperacionp1joseturcios\src\usuario.cpp
+1687371768 source:c:\users\joset\onedrive\escritorio\progra1\tareasp19959224451\recuperación\recuperacionp1joseturcios\src\usuario.cpp
 	"Usuario.h"
 
 1687371238 source:c:\users\joset\onedrive\escritorio\progra1\tareasp19959224451\recuperación\recuperacionp1joseturcios\src\ventaboletos.cpp

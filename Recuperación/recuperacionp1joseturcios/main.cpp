@@ -12,7 +12,7 @@ using namespace std;
 
 int main()
 {
-    llamaPortada.dibujarPortada("Portada.txt");
+    llamaPortada.dibujarPort("Portada.txt");
     Usuario IngresoUsuario;
     int numero;
     do
@@ -36,11 +36,11 @@ int main()
         switch(numero)
         {
             case 1:
-                IngresoUsuario.iniciarSesion();
+                IngresoUsuario.inicioSesion();
                 break;
 
             case 2:
-                IngresoUsuario.registroUsuario();
+                IngresoUsuario.registroU();
                 break;
 
             case 3:

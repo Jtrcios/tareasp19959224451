@@ -100,7 +100,7 @@ void Menus::menuCatalogos(string nombreUsuario)
 
     case 2:{
         system("cls");
-        traerMenuPeli.menuPeliculas(userName);
+        traerMenuPeli.menuPeli(userName);
     break;
     }
     case 3:{
@@ -148,7 +148,7 @@ void Menus::subMenuInformes(string nombreUsuario)
 
     case 2:{
         system("cls");
-            traerMenu.menuUsuario(userName);
+            traerMenu.menuU(userName);
     break;
     }
     case 3:

@@ -15,12 +15,12 @@ using namespace std;
 class Peliculas
 {
     public:
-        void menuPeliculas(string nombreUsuario);
-        void registroPeliculas(string nombreUsuario);
-        void modificarPeliculas(string nombreUsuario);
-        void imprimirPeliculas(string nombreUsuario);
-        void buscarPeliculas(string nombreUsuario);
-        void borrarPeliculas(string nombreUsuario);
+        void menuPeli(string nombreUsuario);
+        void registroPeli(string nombreUsuario);
+        void modificarPeli(string nombreUsuario);
+        void imprimirPeli(string nombreUsuario);
+        void buscarPeli(string nombreUsuario);
+        void borrarPeli(string nombreUsuario);
 
     protected:
 

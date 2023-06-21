@@ -7,7 +7,7 @@ string nombreUsuario, contra;
 Menus llamarMenu;
 Bitacora enviarDatosU;
 
-void Usuario::iniciarSesion()
+void Usuario::inicioSesion()
 {
     system("cls");
 	fstream file, file1;
@@ -70,7 +70,7 @@ void Usuario::iniciarSesion()
     }
     file.close();
 }
-void Usuario::menuUsuario(string nombreUsuario)
+void Usuario::menuU(string nombreUsuario)
 {
     string userName = nombreUsuario;
     char x;
@@ -119,7 +119,7 @@ void Usuario::menuUsuario(string nombreUsuario)
         }
     }while(opcion!=5);
 }
-void Usuario::registroUsuario()
+void Usuario::registroU()
 {
 
 	system("cls");
@@ -306,7 +306,7 @@ void Usuario::borrarUsuario(string nombreUsuario)
 	}
 }
 
-void Usuario::dibujarPortada(string nombreArchivo)
+void Usuario::dibujarPort(string nombreArchivo)
 	{
         string line;
         ifstream myFile(nombreArchivo);

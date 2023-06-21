@@ -15,14 +15,14 @@ class Usuario
 {
 
 	public:
-		void iniciarSesion();
-		void menuUsuario(string nombreUsuario);
-		void registroUsuario();
+		void inicioSesion();
+		void menuU(string nombreUsuario);
+		void registroU();
 		void imprimirUsuario(string nombreUsuario);
 		void borrarUsuario(string nombreUsuario);
 		void modificarUsuario(string nombreUsuario);
 		void buscarUsuario(string nombreUsuario);
-		void dibujarPortada(string nombreArchivo);
+		void dibujarPort(string nombreArchivo);
 
 		private:
 		string nombre, contrasena;
